@@ -1,0 +1,28 @@
+﻿<Window x:Class="SD.WalletERC20.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SD.WalletERC20"
+        mc:Ignorable="d"
+        Title="SD.WalletER20" Height="350" Width="525">
+    <Grid>
+        <StackPanel Margin="10">
+            <TextBlock Text="ContractAddress"/>
+            <TextBox Name="Contract"/>
+
+            <TextBlock Text="Wallet"/>
+            <TextBox Name="Wallet"/>
+
+            <TextBlock Text="Balance(token)"/>
+            <TextBox Name="BalanceToken"/>
+
+            <TextBlock Text="Balance(Eth)"/>
+            <TextBox Name="BalanceEth"/>
+
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Refresh" Click="Button_Refresh"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
