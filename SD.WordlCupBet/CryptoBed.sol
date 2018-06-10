@@ -1,6 +1,6 @@
 pragma solidity ^0.4.23;
 
-import "./lib/BasicToken.sol";
+import "./lib/SafeMath.sol";
  
 contract WorldCupCryptoBet {    
     using SafeMath for uint256;
